@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Zapdos - Hackatohm</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="Imagens/zapdos-logo copy.png" type="image/png">
+  <link rel="stylesheet" href="solucao.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="Imagens/zapdos-logo copy.png" alt="Zapdos Logo">
+    </div>
+    <nav>
+      <a href="#sobre-projeto">Projeto</a>
+      <a href="#etapas">Etapas</a>
+      <a href="#galeria">Galeria</a>
+      <a href="solucao.html">Solução</a>
+      <a href="index.html">Slides</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="Imagens/rolamento-videoundefined.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
+      <img src="Imagens/zapdos-brand.png" class="brand">
+      <p>Somos o grupo <strong>Project Zapdos</strong>, representando o CEFET-MG no Hackathon DATA Engenharia.</p>
+    </div>
+  </section>
+
+  <!-- SEÇÃO PRINCIPAL DO PROJETO -->
+  <section id="sobre-projeto" class="sobre">
+    <h2>O Problema Crítico da Última Milha: Uma Crise de Confiança e Custo </h2>
+    <div class="content-block">
+      <div class="text">
+        <p>
+A DATA Engenharia consolidou-se como um pilar fundamental em setores críticos da economia, incluindo energia, mineração, siderurgia e papel e celulose, através da fabricação, reforma e modernização de motores, geradores e transformadores de médio e grande porte. A reputação da empresa é construída sobre a premissa de engenharia de precisão e controle de qualidade rigoroso. No entanto, um desafio sistêmico está a minar esta fundação: motores elétricos de alto valor, que são aprovados em testes exaustivos de fábrica, incluindo análises detalhadas de espectros de vibração e aceleração, estão a chegar às instalações dos clientes com sinais de falha incipiente nos rolamentos.<br>
+<br>Este fenômeno resulta em reclamações de clientes e acionamentos de garantia, criando um conflito direto entre a qualidade certificada na origem e a performance real no destino. A investigação do problema revelou que a degradação não ocorre durante o processo de fabrico, mas sim na fase de transporte, especialmente em viagens longas por estradas precárias. Esta "última milha" logística representa uma lacuna crítica no ciclo de vida do produto, onde um ativo de engenharia de precisão é exposto a um ambiente não controlado que anula o valor das garantias de qualidade de fábrica e, mais criticamente, corrói a confiança do cliente. O problema, portanto, não é um defeito de fabrico, mas uma falha sistêmica na proteção de ativos e na gestão logística, exigindo uma solução que transcenda os limites da oficina e abranja todo o percurso até à instalação final.
+
+</p><br>
+      </div>
+      <div class="image">
+        <img src="Imagens/rolamento.png" alt="Rolamento">
+      </div>
+    </div>
+  </section>
+
+  <!-- PILAR I -->
+  <section id="pilar-i" class="sobre">
+    <h2>A Física da Falha: Uma Análise Técnica Aprofundada do Falso Brinelamento</h2>
+    <div class="content-block">
+      <div class="text">
+        <p>
+A causa raiz desta degradação prematura é um mecanismo de desgaste bem conhecido na engenharia mecânica, mas frequentemente subestimado em contextos logísticos: o falso brinelamento (False Brinelling). Contrariamente à intuição, este dano não é tipicamente causado por choques de alto impacto, mas sim por vibrações cíclicas, de baixa amplitude e sustentadas, que atuam sobre um rolamento estacionário. O processo de falha pode ser decomposto em quatro etapas sequenciais e destrutivas.
+Primeiro, o peso próprio do motor exerce uma carga estática, pressionando os elementos rolantes (esferas ou rolos) contra as pistas do rolamento. Segundo, as vibrações contínuas do veículo de transporte induzem micro-oscilações nos elementos rolantes sobre uma área de contacto muito pequena. Terceiro, como não há rotação completa do eixo, o filme de lubrificante é expulso dos pontos de contacto e não é reabastecido, eliminando a barreira protetora entre as superfícies metálicas. Finalmente, o contacto metal-metal desprotegido, combinado com a umidade do ambiente, desencadeia um processo de corrosão por atrito (fretting corrosion). Esta combinação de desgaste corrosivo e abrasivo resulta na formação de depressões ou ranhuras características nas pistas do rolamento, encurtando drasticamente a sua vida útil.
+A prática atual de transporte da DATA Energia, que envolve a fixação do eixo para bloquear os rolamentos radial e axialmente, revela um fundamental desalinhamento com a física do problema. Este método foi concebido para impedir movimentos de grande escala, como a rotação do eixo. No entanto, o falso brinelamento é causado por oscilações de micro-escala e alta frequência. O sistema de travamento atual, embora lógico para prevenir movimentos grosseiros, é completamente ineficaz contra as vibrações de alta frequência que são a verdadeira causa do dano. Esta constatação justifica a necessidade de uma abordagem mecânica inteiramente nova, focada no isolamento de vibrações e amortecimento, em vez de mera imobilização.
+        </p><br>
+    
+      </div>
+      <div class="image">
+        <img src="Imagens/rolamento IA.png" alt="Rolamento">
+      </div>
+    </div>
+  </section>
+
+  <!-- PILAR II -->
+  <section id="pilar-ii" class="sobre">
+    <h2>Evidência Empírica: A Acusação do Estudo de Caso Sarzedo-Ceará
+</h2>
+    <div class="content-block">
+      <div class="text">
+        <p>
+A prova irrefutável que valida a ligação causal entre o transporte e a falha do rolamento é fornecida por um estudo de caso detalhado de um motor de indução de rotor bobinado, modelo HELMKE DSKK 710-06, com uma potência de 2600 kW. Este motor foi transportado desde a unidade industrial da DATA em Sarzedo, Minas Gerais, até ao Ceará, uma jornada de aproximadamente 2.379 km que expôs o equipamento a condições de estrada variáveis e potencialmente severas.
+A análise comparativa dos espectros de vibração antes e depois da viagem fornece uma "arma do crime" em forma de dados.
+        </p><br>
+        <P>
+            <strong>Pré-Teste de Transporte (Teste de Oficina):</strong> A análise do espectro de envelope de aceleração, realizada na fábrica, mostrou um perfil limpo, com valores de Root Mean Square (RMS) extremamente baixos, como 0.0390 g, indicando um rolamento em perfeitas condições.
+
+        </P><br>
+        <P><strong>Pós- Transporte (Após Viagem)</strong>: A mesma análise, realizada após a chegada do motor ao destino, revelou uma transformação dramática. O espectro estava dominado por picos de alta amplitude correspondentes à Frequência de Passagem da Esfera pela Pista Interna (BPFI - Ball Pass Frequency Inner Race). Os níveis de vibração medidos atingiram valores alarmantes de 3.8 e 7 G's RMS, indicativos de um dano mecânico significativo e compatível com o falso brinelamento.</P>
+      </div>
+      <div class="image">
+        <img src="Imagens/rolamento.png" alt="Rolamento">
+      </div>
+    </div>
+  </section>
+  <section class="sobre">
+    <h2>Etapas do Trabalho</h2>
+
+  </section>
+
+  <!-- ETAPAS -->
+  <section id="etapas" class="etapas">
+    <div class="card-container">
+      <div class="card">
+          <img src="Imagens/Coxim.jpg" alt="Coxim">
+        <h3>Isolamento e Amortecimento</h3>
+        <p>Utilização de coxins elastoméricos com propriedades específicas de amortecimento.</p>
+      </div>
+
+      <div class="card">
+          <img src="Imagens/Parte da frente final.jpg" alt="Monitorização">
+        <h3>Monitorização em Tempo Real</h3>
+        <p>Monitoramento de vibrações e choques durante o transporte, via sensores IoT.</p>
+      </div>
+
+      <div class="card">
+          <img src="Imagens/Monitoramento.jpg" alt="Análise Preditiva">
+        <h3>Análise Preditiva</h3>
+        <p>Uso de dados coletados para prever falhas e otimizar o transporte dos motores.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section id="galeria" class="galeria">
+    <h2>Galeria do Projeto</h2>
+    <div class="gallery-grid">
+      <img src="Imagens/JoãoCayô3Edit2.jpg" alt="Imagem 1">
+      <img src="Imagens/GrupoEdit2.jpg" alt="Imagem 2">
+      <img src="Imagens/JuliaProg1Edit1.JPG" alt="Imagem 3">
+      <img src="Imagens/DSC_0018.JPG" alt="Imagem 4">
+      <img src="Imagens/DSC_0027.JPG" alt="Imagem 5">
+      <img src="Imagens/DSC_0012.JPG" alt="Imagem 6">
+      <img src="Imagens/JoãoCayô2Edit1.png" alt="Imagem 8">
+      <img src="Imagens/ComputadorEdit4.png" alt="Imagem 8">
+      <img src="Imagens/DSC_0041.png" alt="Imagem 7">
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="contato">
+    <h2>Quer saber mais sobre o projeto?</h2>
+    <div class="buttons">
+      <a href="https://www.data.com.br/" target="_blank">Conheça a DATA</a>
+      <a href="solucao.html">Nossa Solução</a>
+      <a href="rolamentos.html">Sobre Rolamentos</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Project Zapdos | CEFET-MG</p>
+  </footer>
+</body>
+</html>

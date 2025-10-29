@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Zapdos - Hackatohm</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="Imagens/zapdos-logo copy.png" type="image/png">
+  <link rel="stylesheet" href="solucao.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="Imagens/zapdos-logo copy.png" alt="Zapdos Logo">
+    </div>
+    <nav>
+      <a href ="home.html">Home</a>
+      <a href="#etapas">Etapas</a>
+      <a href="#galeria">Galeria</a>
+      <a href="index.html">Slides</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="Imagens/rolamento-videoundefined.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
+      <img src="Imagens/zapdos-brand.png" class="brand">
+      <p>Somos o grupo <strong>Project Zapdos</strong>, representando o CEFET-MG no Hackathon DATA Engenharia.</p>
+    </div>
+  </section>
+
+  <!-- SEÇÃO PRINCIPAL DO PROJETO -->
+  <section id="sobre-projeto" class="sobre">
+    <h2>A Solução Zapdos: Uma Estratégia de Três Pilares para a Integridade Total do Ativo</h2>
+    <div class="content-block">
+      <div class="text">
+        <p>
+O Projeto Zapdos é concebido como um sistema holístico e integrado que aborda o desafio "Motor sem traumas no transporte" de forma abrangente. A solução não se limita a um único aspecto do problema, mas implementa uma estratégia de três pilares interconectados que cobrem a prevenção, a detecção e a validação, garantindo a integridade do ativo desde a fábrica até à instalação final.
+        </p><br>
+      </div>
+      <div class="image">
+        <img src="Imagens/rolamento.png" alt="Rolamento">
+      </div>
+    </div>
+  </section>
+
+  <!-- PILAR I -->
+  <section id="pilar-i" class="sobre">
+    <h2>Pilar I: Isolamento Mecânico Proativo (Prevenção)</h2>
+    <div class="content-block">
+      <div class="text">
+        <p>
+Este pilar constitui a primeira linha de defesa e aborda diretamente o primeiro ponto do desafio: "Travamento/isolamento do eixo e base de amortecimento para transporte". O objetivo é redesenhar fundamentalmente a interface física entre o motor e o veículo de transporte para mitigar a causa raiz do problema.
+        </p><br>
+        
+        <h3>Base de Amortecimento Adaptativa</h3><br>
+        <p>
+O segundo componente deste pilar é a engenharia de uma nova base de transporte que funciona como um sistema de amortecimento ativo. Em vez de uma simples palete ou estrado, esta base será equipada com suportes de isolamento de vibração, como coxins elastoméricos ou outros materiais com propriedades de amortecimento específicas. Estes materiais serão selecionados para absorver energia nas faixas de frequência problemáticas, tipicamente encontradas no transporte rodoviário. O objetivo é isolar o motor das vibrações do veículo, impedindo que essa energia destrutiva chegue aos rolamentos.
+        </p>
+      </div>
+      <div class="image">
+        <img src="Imagens/CoximEdit1-removebg-preview.png" alt="Rolamento">
+      </div>
+    </div>
+  </section>
+
+  <!-- PILAR II -->
+  <section id="pilar-ii" class="sobre">
+    <h2>Pilar II: Monitorização da Jornada em Tempo Real (Detecção)</h2>
+    <div class="content-block">
+      <div class="text">
+        <p>
+O segundo componente deste pilar é a engenharia de uma nova base de transporte que funciona como um sistema de amortecimento ativo. Em vez de uma simples palete ou estrado, esta base será equipada com suportes de isolamento de vibração, como coxins elastoméricos ou outros materiais com propriedades de amortecimento específicas. Estes materiais serão selecionados para absorver energia nas faixas de frequência problemáticas, tipicamente encontradas no transporte rodoviário. O objetivo é isolar o motor das vibrações do veículo, impedindo que essa energia destrutiva chegue aos rolamentos.
+        </p><br>
+        <h3>O Núcleo do Sensor IoT</h3><br>
+        <p>
+O coração deste pilar é uma unidade de sensor IoT de baixo custo, robusta e autónoma. O hardware central será uma Unidade de Processamento de Movimento (MPU) ou Unidade de Medição Inercial (IMU), que integra um acelerómetro de 3 eixos e um giroscópio. Este sensor será montado diretamente na carcaça do motor, próximo ao alojamento do rolamento, para capturar os dados de vibração mais relevantes. A unidade também incluirá um módulo GPS para correlação de eventos com a localização (por exemplo, "evento de alto choque ocorreu nas coordenadas X, Y, numa estrada em mau estado") e um modem celular para a transmissão de dados, criando uma "Rede IoT" eficaz.
+        </p>
+        <h3>Arquitetura de Dados e Plataforma na Nuvem</h3><br>
+        <p>
+Para gerir o fluxo de informações, será implementada uma arquitetura de dados escalável. O dispositivo IoT registará os dados localmente com carimbos de data e hora e realizará uploads periódicos ou acionados por eventos para um servidor na nuvem. Os dados serão armazenados numa base de dados de séries temporais, otimizada para consultas e análises de grandes volumes de dados de sensores. Esta abordagem demonstra uma visão de futuro sobre a gestão e o aproveitamento dos dados recolhidos.
+        </p>
+      </div>
+      <div class="image">
+        <img src="Imagens/Parte_da_frente_final-remove-fundo.png" alt="Rolamento">
+      </div>
+    </div>
+  </section>
+
+  <!-- PILAR III -->
+  <section id="pilar-iii" class="sobre">
+    <h2>Pilar III: Análise Preditiva de Dados (Validação)</h2>
+    <div class="content-block">
+      <div class="text">
+        <p>
+Este é o pilar mais inovador e aborda o terceiro e mais complexo ponto do desafio: "Análise dos dados coletados e critérios de aceitação (níveis de energia necessários para causar dano)". Este pilar transforma dados brutos em inteligência acionável, utilizando conceitos avançados de processamento de sinais e modelagem preditiva.
+        </p><br>
+        <h3>Da Dado Bruto à Correlação de Danos</h3><br>
+        <p>
+A metodologia começa com o processamento dos dados brutos do acelerómetro. Serão extraídas características estatísticas chave tanto no domínio do tempo (força G de pico, aceleração RMS, curtose, fator de crista) como no domínio da frequência (utilizando a Transformada Rápida de Fourier - FFT - para identificar o conteúdo energético em bandas de frequência específicas). Este processo fornece um "método para obter força do impacto confiável", conforme idealizado pela equipa.
+        </p>
+        <h3>Modelo Quantitativo de Limiar de Dano</h3><br>
+        <p>
+O núcleo analítico do projeto é a correlação dos dados da jornada (Pilar II) com os dados de inspeção pós-viagem (como a análise BPFI do estudo de caso). Ao analisar múltiplos transportes, será construído um modelo preditivo que liga perfis de vibração específicos à probabilidade de ocorrência de falso brinelamento. O objetivo final é definir um limiar de dano claro e baseado em dados. Este limiar pode ser expresso como um "Valor de Dose de Vibração" ou uma métrica de energia de choque cumulativa (medida em Joules, conforme sugerido pela menção a "níveis de energia" no desafio).
+O resultado será um conjunto de critérios de aceitação simples e acionáveis. Por exemplo: "Se a energia de vibração cumulativa exceder X Joules, o motor é automaticamente sinalizado para uma inspeção obrigatória do rolamento antes da entrega ao cliente, independentemente da sua aparência funcional." Este sistema cria um ciclo de feedback virtuoso: os dados do Pilar II, analisados pelo Pilar III, fornecem uma avaliação quantitativa e direta do desempenho do Pilar I. Se uma determinada rota gera consistentemente níveis de vibração próximos do limiar de dano, esses dados podem ser usados para reforçar a solução mecânica ou para aconselhar o parceiro logístico a utilizar uma rota alternativa. Isto transforma o sistema de um simples monitor num instrumento de gestão logística inteligente e de melhoria contínua.
+        </p>
+      </div>
+      <div class="image">
+        <img src="Imagens/Monitoramento-removebg-preview.png" alt="Rolamento">
+      </div>
+    </div>
+  </section>
+
+  <!-- ETAPAS -->
+  <section id="etapas" class="etapas">
+    <div class="card-container">
+      <div class="card">
+        <a href="#pilar-i">
+          <img src="Imagens/Coxim.jpg" alt="Coxim">
+        </a>
+        <h3>Isolamento e Amortecimento</h3>
+        <p>Utilização de coxins elastoméricos com propriedades específicas de amortecimento.</p>
+      </div>
+
+      <div class="card">
+        <a href="#pilar-ii">
+          <img src="Imagens/Parte da frente final.jpg" alt="Monitorização">
+        </a>
+        <h3>Monitorização em Tempo Real</h3>
+        <p>Monitoramento de vibrações e choques durante o transporte, via sensores IoT.</p>
+      </div>
+
+      <div class="card">
+        <a href="#pilar-iii">
+          <img src="Imagens/Monitoramento.jpg" alt="Análise Preditiva">
+        </a>
+        <h3>Análise Preditiva</h3>
+        <p>Uso de dados coletados para prever falhas e otimizar o transporte dos motores.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section id="galeria" class="galeria">
+    <h2>Galeria do Projeto</h2>
+    <div class="gallery-grid">
+      <img src="Imagens/Autocad  coxim 3d.jpg" alt="Imagem 1">
+      <img src="Imagens/Autocad coxim 2d.jpg" alt="Imagem 2">
+      <img src="Imagens/Coxim.jpg" alt="Imagem 3">
+      <img src="Imagens/Parte da frente final.jpg" alt="Imagem 4">
+      <img src="Imagens/sem coxim.jpg" alt="Imagem 5">
+      <img src="Imagens/com coxim.jpg" alt="Imagem 6">
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="contato">
+
+    <h2>Quer saber mais sobre o projeto?</h2>
+    <div class="buttons">
+      <a href="https://www.data.com.br/" target="_blank">Conheça a DATA</a>
+      <a href="#">Nossa Solução</a>
+      <a href="rolamentos.html">Sobre Rolamentos</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Project Zapdos | CEFET-MG</p>
+  </footer>
+</body>
+</html>
